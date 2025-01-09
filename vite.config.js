@@ -68,15 +68,11 @@ export default defineConfig({
             "purpose": "any maskable"
           }
         ],
-        start_url: './',
+        start_url: '/',
         theme_color: '#f9b400',
         background_color: '#c3e6f8',
         display: 'standalone',
         scope: '/'
-      },
-      // Optional: Enable workbox for offline caching
-      workbox: {
-        // Customize workbox options (https://developers.google.com/web/tools/workbox/modules/workbox-webpack-plugin)
       },
     }),
   ],
