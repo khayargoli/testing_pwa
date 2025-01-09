@@ -206,7 +206,7 @@ export function Login() {
 
           navigate('/feed');
           setTimeout(() => {
-            shoutOut();
+            displayInstallPopupAfterLogin();
           }, 3000);
         } else {
           dispatch(loadingFailed(response.data.message));

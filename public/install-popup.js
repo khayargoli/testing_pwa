@@ -147,10 +147,10 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("beforeinstallprompt", (e) => {
     e.preventDefault();
     installEvent = e;
-    if (shouldShowInstallPopup()) createInstallPopup();
+    //if (shouldShowInstallPopup()) createInstallPopup();
   });
 
-  window.shoutOut = function () {
+  window.displayInstallPopupAfterLogin = function () {
     if (installEvent != null && shouldShowInstallPopup()) createInstallPopup();
   };
 
