@@ -131,9 +131,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  function shoutOut() {
+  window.shoutOut = function () {
     alert(1);
-  }
+  };
 
   function shouldShowInstallPopup() {
     const prevDate = Number(localStorage.getItem("prevPopupDate"));
