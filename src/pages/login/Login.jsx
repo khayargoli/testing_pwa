@@ -156,10 +156,6 @@ export function Login() {
   const dispatch = useDispatch();
   const [isLoading, setIsLoading] = useState(false);
 
-  useEffect(() => {
-    shoutOut();
-  })
-
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -209,6 +205,9 @@ export function Login() {
             );
 
           navigate('/feed');
+          setTimeout(() => {
+            shoutOut();
+          }, 3000);
         } else {
           dispatch(loadingFailed(response.data.message));
           toast.error(response.data.message);

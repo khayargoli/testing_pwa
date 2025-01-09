@@ -131,9 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  window.shoutOut = function () {
-    alert(1);
-  };
+
 
   function shouldShowInstallPopup() {
     const prevDate = Number(localStorage.getItem("prevPopupDate"));
@@ -151,6 +149,10 @@ document.addEventListener("DOMContentLoaded", function () {
     installEvent = e;
     if (shouldShowInstallPopup()) createInstallPopup();
   });
+
+  window.shoutOut = function () {
+    if (shouldShowInstallPopup()) createInstallPopup();
+  };
 
   // Check if the device is iOS and not in standalone mode
   // if (isIos() && !isInStandaloneMode() && isAuth()) {
