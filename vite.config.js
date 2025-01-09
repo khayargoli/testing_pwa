@@ -27,6 +27,10 @@ export default defineConfig({
         short_name: 'BeeU',
         description: 'BeeU - pollinate your next level social video clip network',
         theme_color: '#ffffff',
+        start_url: '/',
+        theme_color: '#f9b400',
+        background_color: '#c3e6f8',
+        display: 'standalone',
         icons: [
           {
             "src": "icon-192.png",
@@ -51,11 +55,6 @@ export default defineConfig({
             purpose: 'maskable'
           }
         ],
-        start_url: '/',
-        theme_color: '#f9b400',
-        background_color: '#c3e6f8',
-        display: 'standalone',
-        scope: '/'
       },
     }),
   ],
