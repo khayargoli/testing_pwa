@@ -149,14 +149,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   window.displayInstallPopupAfterLogin = function () {
+    alert(shouldShowInstallPopup());
+    alert((installEvent != null));
     if (installEvent != null && shouldShowInstallPopup()) createInstallPopup();
   };
 
   // Check if the device is iOS and not in standalone mode
   // if (isIos() && !isInStandaloneMode() && isAuth()) {
-  if (isIos()) {
-    if (shouldShowInstallPopup()) createInstallPopup();
-  }
+  // if (isIos()) {
+  //   if (shouldShowInstallPopup()) createInstallPopup();
+  // }
 
   // Check if PWA is already installed
   window.addEventListener("appinstalled", () => {
