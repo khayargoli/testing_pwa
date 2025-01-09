@@ -131,7 +131,7 @@
 //   );
 // }
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { BeeuLogo } from "../../components/misc/BeeuLogo";
 
@@ -155,6 +155,10 @@ export function Login() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    shoutOut();
+  })
 
   const formik = useFormik({
     initialValues: {

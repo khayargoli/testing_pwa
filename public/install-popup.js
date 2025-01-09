@@ -131,7 +131,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // show once in a day
+  function shoutOut() {
+    alert(1);
+  }
+
   function shouldShowInstallPopup() {
     const prevDate = Number(localStorage.getItem("prevPopupDate"));
     const currDate = new Date().getDate();
