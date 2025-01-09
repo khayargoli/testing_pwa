@@ -21,26 +21,25 @@ export default defineConfig({
     react(),
     VitePWA({  
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
+      includeAssets: ['favicon.ico', 'apple-touch-icon.png'],
       manifest: {
         name: 'BeeU',
         short_name: 'BeeU',
         description: 'BeeU - pollinate your next level social video clip network',
         theme_color: '#ffffff',
         icons: [
-          
           {
-            "src": "icons/icon-192.png",
+            "src": "icon-192.png",
             "type": "image/png",
             "sizes": "192x192"
           },
           {
-            "src": "icons/icon-512.png",
+            "src": "icon-512.png",
             "type": "image/png",
             "sizes": "512x512"
           }
         ],
-        start_url: './',
+        start_url: '/',
         theme_color: '#f9b400',
         background_color: '#c3e6f8',
         display: 'standalone',
