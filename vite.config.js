@@ -5,7 +5,6 @@ import { VitePWA } from 'vite-plugin-pwa';
 // https://vitejs.dev/config/
 export default defineConfig({
   server: {
-    https: true,
     headers: {
       'Cache-Control': 'no-store',
       Pragma: 'no-cache',
@@ -30,12 +29,12 @@ export default defineConfig({
         short_name: 'BeeU',
         icons: [
           {
-            src: '/icons/android-chrome-192x192.png',
+            src: '/icons/icon-192.webp',
             sizes: '192x192',
             type: 'image/png',
           },
           {
-            src: '/icons/android-chrome-512x512.png',
+            src: '/icons/icon-512.webp',
             sizes: '512x512',
             type: 'image/png',
           },
