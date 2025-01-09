@@ -149,9 +149,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   window.displayInstallPopupAfterLogin = function () {
-    alert(shouldShowInstallPopup());
-    alert((installEvent != null));
-    if (installEvent != null && shouldShowInstallPopup()) createInstallPopup();
+
+    if (isIos() || (installEvent != null && shouldShowInstallPopup())) createInstallPopup();
   };
 
   // Check if the device is iOS and not in standalone mode
