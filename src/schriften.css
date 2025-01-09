@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'bregular';
+    src: url('/src/assets/fonts/balooregular.woff2') format('woff2'),
+         url('/src/assets/fonts/balooregular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bmedium';
+    src: url('/src/assets/fonts/baloomedium.woff2') format('woff2'),
+         url('/src/assets/fonts/baloomedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bbold';
+    src: url('/src/assets/fonts/baloobold.woff2') format('woff2'),
+         url('/src/assets/fonts/baloobold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bblack';
+    src: url('/src/assets/fonts/balooblack.woff2') format('woff2'),
+         url('/src/assets/fonts/balooblack.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*************** DESKTOP SCREEN ***************/
+
+@media only screen and (min-device-width: 500px) {
+  .mainframe {
+    min-height: 600px;
+    max-width: 380px; /* unfortunately on android its 360px, on ios 400px or 420px, taking a middle on desktop */
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    margin: 30px 0 30px 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .mainframe video {
+    /* border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px; */
+  }
+  .mainframe a video {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .bottom {
+    position: absolute;
+    bottom: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .topic,
+  .reaction {
+    position: absolute;
+    padding-top: 5px;
+    background-color: rgba(195, 230, 248, 0);
+  }
+
+  .halfvideocontainer {
+    position: relative;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-bottom: 56px;
+  }
+
+  .home {
+    height: 85.7vh;
+  }
+
+  .feedvideocontainer {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .bottom .reactions {
+    bottom: 5px;
+  }
+
+  a.main {
+    border-top-left-radius: 15px;
+  }
+
+  a.last {
+    border-top-right-radius: 15px;
+  }
+
+  .camera {
+    border-radius: 20px;
+  }
+
+  .profile input[type='checkbox'] {
+    margin-bottom: 1px;
+  }
+} /* ENDE @media */
