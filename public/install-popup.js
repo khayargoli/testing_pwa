@@ -91,16 +91,14 @@ document.addEventListener("DOMContentLoaded", function () {
     popup.innerHTML = `
             <div class="popup-content">
                 <h2>Install Beeu</h2>
-                <p>${
-                  isIos()
-                    ? 'Tap the Share button and then "Add to Home Screen".'
-                    : "Use BeeU in fullscreen, install this browser-link button on your mobile device"
-                }</p>
-                ${
-                  isIos()
-                    ? ""
-                    : '<button id="install" class="install-button">Install Now</button>'
-                }
+                <p>${isIos()
+        ? 'Tap the Share button and then "Add to Home Screen".'
+        : "Use BeeU in fullscreen, install this browser-link button on your mobile device"
+      }</p>
+                ${isIos()
+        ? ""
+        : '<button id="install" class="install-button">Install Now</button>'
+      }
                 <button id="close-button" class="close-button">Close</button>
             </div>
         `;
@@ -138,7 +136,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const prevDate = Number(localStorage.getItem("prevPopupDate"));
     const currDate = new Date().getDate();
 
-    localStorage.setItem("prevPopupDate", currDate);
+    if (isAuth()) {
+      localStorage.setItem("prevPopupDate", currDate);
+    }
     return isAuth() && currDate !== prevDate;
   }
 
