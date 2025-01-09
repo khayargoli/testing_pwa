@@ -136,11 +136,11 @@ document.addEventListener("DOMContentLoaded", function () {
   function shouldShowInstallPopup() {
     const prevDate = Number(localStorage.getItem("prevPopupDate"));
     const currDate = new Date().getDate();
-    const isAuth = isAuth();
-    if (isAuth) {
+    const _isAuth = isAuth();
+    if (_isAuth) {
       localStorage.setItem("prevPopupDate", currDate);
     }
-    return isAuth && currDate !== prevDate;
+    return _isAuth && currDate !== prevDate;
   }
 
   // Listen for the beforeinstallprompt event
