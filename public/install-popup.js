@@ -136,11 +136,11 @@ document.addEventListener("DOMContentLoaded", function () {
   function shouldShowInstallPopup() {
     const prevDate = Number(localStorage.getItem("prevPopupDate"));
     const currDate = new Date().getDate();
-
-    if (isAuth()) {
+    const isAuth = isAuth();
+    if (isAuth) {
       localStorage.setItem("prevPopupDate", currDate);
     }
-    return isAuth() && currDate !== prevDate;
+    return isAuth && currDate !== prevDate;
   }
 
   // Listen for the beforeinstallprompt event
@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   window.shoutOut = function () {
-    if (shouldShowInstallPopup()) createInstallPopup();
+    if (installEvent != null && shouldShowInstallPopup()) createInstallPopup();
   };
 
   // Check if the device is iOS and not in standalone mode
