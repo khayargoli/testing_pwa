@@ -72,7 +72,8 @@ export default defineConfig({
         theme_color: '#f9b400',
         background_color: '#c3e6f8',
         display: 'standalone',
-        prefer_related_applications: false
+        prefer_related_applications: false,
+        scope: '/'
       },
       // Optional: Enable workbox for offline caching
       workbox: {
