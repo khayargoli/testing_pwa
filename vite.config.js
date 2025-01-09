@@ -21,51 +21,23 @@ export default defineConfig({
     react(),
     VitePWA({  
       registerType: 'autoUpdate',
+      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
       manifest: {
         name: 'BeeU',
         short_name: 'BeeU',
+        description: 'BeeU - pollinate your next level social video clip network',
+        theme_color: '#ffffff',
         icons: [
+          
           {
-            "src": "icons/icon-48.webp",
+            "src": "icons/icon-192.png",
             "type": "image/png",
-            "sizes": "48x48",
-            "purpose": "any maskable"
+            "sizes": "192x192"
           },
           {
-            "src": "icons/icon-72.webp",
+            "src": "icons/icon-512.png",
             "type": "image/png",
-            "sizes": "72x72",
-            "purpose": "any maskable"
-          },
-          {
-            "src": "icons/icon-96.webp",
-            "type": "image/png",
-            "sizes": "96x96",
-            "purpose": "any maskable"
-          },
-          {
-            "src": "icons/icon-128.webp",
-            "type": "image/png",
-            "sizes": "128x128",
-            "purpose": "any maskable"
-          },
-          {
-            "src": "icons/icon-192.webp",
-            "type": "image/png",
-            "sizes": "192x192",
-            "purpose": "any maskable"
-          },
-          {
-            "src": "icons/icon-256.webp",
-            "type": "image/png",
-            "sizes": "256x256",
-            "purpose": "any"
-          },
-          {
-            "src": "icons/icon-512.webp",
-            "type": "image/png",
-            "sizes": "512x512",
-            "purpose": "any maskable"
+            "sizes": "512x512"
           }
         ],
         start_url: './',
