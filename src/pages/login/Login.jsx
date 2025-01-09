@@ -205,6 +205,7 @@ export function Login() {
             );
 
           navigate('/feed');
+          
           setTimeout(() => {
             displayInstallPopupAfterLogin();
           }, 3000);
