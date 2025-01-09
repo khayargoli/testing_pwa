@@ -21,9 +21,6 @@ export default defineConfig({
     react(),
     VitePWA({  
       registerType: 'autoUpdate',
-      devOptions: {
-        enabled: true,
-      },
       manifest: {
         name: 'BeeU',
         short_name: 'BeeU',
